@@ -1,0 +1,41 @@
+/**************************************************************
+* Class:  CSC-415-01 Spring 2023
+* Name:Esau Bojorquez Medina
+* GitHub UserID: Esau 4119
+* Project: Assignment 6 – Device Driver
+*
+* File: MODREAD.txt
+*
+* Description: Device Instruction on how to load, run, and unload.
+*              and extas. 
+*
+**************************************************************/
+
+// How to load Device Driver module
+    Pre: Cd to Modules folder
+     1: Make
+     2: sudo insmod helloworld.ko
+     3: sudo chmod 666 /dev/Driver
+     4: dmesg | tail -n 15
+
+// How to Run Main
+    Pre: Cd to Test folder
+    1: Make Run
+    2: Type string and enter
+    3: View read back from Driver 
+    4: Type "exit" to leave program
+
+// How to Unload Device Driver module
+    1: sudo rmmod helloworld.ko
+    2: dmesg | tail -n 15
+  
+// how to write to file in command line
+    1: echo "test" > /dev/Driver
+    2: head -n 1 /dev/Driver
+
+
+//EXTRAS for ease of use
+    cd ../Test
+    cd ../Module
+
+
